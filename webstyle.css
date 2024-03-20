@@ -9,8 +9,8 @@ html {
 
   .MenuList button{
     position: relative; /* Position relative for pseudo-elements */
-    background-color: #E04B34;
-    border: 1px solid #944D43;
+    background-color: #cccccc;
+    border: 1px solid #929292;
     width:30%;
     color: black;
     padding: 14px 4px;
@@ -42,7 +42,7 @@ html {
     border-right: none;
   }
   .MenuList button:hover {
-    background-color: #C26557;
+    background-color: #929292;
   }
 
   .container {
@@ -55,7 +55,7 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: black;
-    color: #f1e4e0;
+    color: #d6d6d6;
     padding-left: 20px;
     padding-right: 20px;
     opacity: 0.8;
@@ -68,7 +68,7 @@ html {
   }
   .header {
     background: white;
-    color: #f1e4e0;
+    color: #d6d6d6;
   }
 
   .content {
@@ -125,7 +125,7 @@ html {
   }
 
   .grey-background {
-    background-color: #f1e4e0; 
+    background-color: #d6d6d6; 
     padding-left: 17%; 
     padding-right: 17%;
   }
@@ -148,7 +148,7 @@ html {
   }
 
  footer {
-   background-color: #f1e4e0;
+   background-color: #d6d6d6;
    padding-left: 15%; 
    padding-right: 15%;
    font-size: small;
