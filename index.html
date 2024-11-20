@@ -1,76 +1,574 @@
 <!DOCTYPE html>
-  <html lang=”en”>
-    <head>
-      <meta charset=”utf-8” />
-      <title>Josh Guenther</title>
-      <link rel="stylesheet" href="webstyle.css">
-    </head>
-      <body style="margin: 0;">
-        <div class="top-container" id="top">
-          <div class="container">
-            <img src="HomeHeader.jpg" alt="Header Image" id="topImage" class="headerImage">
-          </div> 
-        </div>
+<html lang="en">
+  <head>
+    <title>Josh's Personal Website</title>
+    <meta property="og:title" content="Josh's Personal Website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
 
-        <div class="header">
-          <div class="MenuList" id="myHeader">
-            <button onClick="location.href='index.html'">Home</button>
-            <button onClick="location.href='One.html'">Portfolio</button>
-            <button onClick="location.href='Two.html'">Resume</button>
-          </div>
-        </div>
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
 
-        <div class="content">
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
 
-          <div class="white-background">
-            <h5>About me 🙂</h5>
-            <div class="quote">
-              <p>Hey, I'm Josh. I'm a Software Developer/Software Tester with a passion for building robust and high quality code. I've got an even bigger passion for breaking
-                 said code until the end result works every time! I've been told I'm a pleasure to work with and fun to have in the office. </p>
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <img
+          alt="image"
+          src="public/selfie%20cropped-400h.png"
+          class="home-image"
+        />
+        <hero17-wrapper class="hero17-wrapper">
+          <!--Hero17 component-->
+          <div id="Home" class="hero17-header78">
+            <div
+              class="hero17-column thq-section-padding thq-section-max-width"
+            >
+              <div class="hero17-content1">
+                <h1 class="hero17-text1 thq-heading-1">
+                  <fragment class="home-fragment11">
+                    <span class="home-text11">Hi, I'm Josh!</span>
+                  </fragment>
+                </h1>
+                <p class="hero17-text2 thq-body-large">
+                  <fragment class="home-fragment10">
+                    <span class="home-text10">
+                      Software Developer / Test Engineer / Android Developer
+                    </span>
+                  </fragment>
+                </p>
               </div>
-          </div>
-
-          <div class="grey-background">
-            <table>
-              <tr>
-                <td>
-                  <p>The best news is, I'm available to hire right now! I'm located in Kitchener-Waterloo if you have a local opportunity available. If you want to know more,
-                    feel free to browse through my little portfolio of personal projects and such, or even my resume! I've done a bunch of things, but these are some that I've done 
-                    for my own enjoyment or to learn about a subject that interested me. </p>
-                </td>
-                <td>
-                  <img src="Selfie cropped.png" alt="A picture of myself" class="SelfGraphic">
-                </td>
-              </tr>
-            </table>
-            <div class="MenuList" id="myHeader">
-              <button onClick="location.href='One.html'">Portfolio</button>
             </div>
-          </div>          
-          <footer id="footer">
-            <br/>
-            <h4>My links</h4>
-            <a href="mailto:joshguen98@gmail.com">Email</a>
-            <a href="https://github.com/Joshguen">Github</a>
-            <a href="https://www.linkedin.com/in/joshua-guenther1/">LinkedIn</a>
-            <br/>
-            <br/>
-          </footer>
-        </div> 
-        <!-- <script>
-          window.onscroll = function() {myFunction()};
-          
-          var header = document.getElementById("myHeader"); 
-          var sticky = header.offsetHeight;
-          
-          function myFunction() {
-            if (window.pageYOffset > document.getElementById("topImage").offsetHeight) {
-              header.classList.add("sticky");
-            } else {
-              header.classList.remove("sticky");
-            }
-          }
-          </script> -->
+            <div>
+              <div class="hero17-container2">
+                <style>
+                  @keyframes scroll-x {
+                    from {
+                      transform: translateX(0);
+                    }
+                    to {
+                      transform: translateX(calc(-100% - 16px));
+                    }
+                  }
 
-      </body>
-  </html>
+                  @keyframes scroll-y {
+                    from {
+                      transform: translateY(0);
+                    }
+                    to {
+                      transform: translateY(calc(-100% - 16px));
+                    }
+                  }
+                </style>
+              </div>
+            </div>
+            <div class="hero17-max-width thq-section-max-width">
+              <div class="hero17-content2 thq-flex-row">
+                <a href="#Home">
+                  <img
+                    src="public/projects1-300h.png"
+                    alt="image"
+                    class="hero17-image1"
+                  />
+                </a>
+                <a href="#Home">
+                  <img
+                    src="public/work%20experience1-300h.png"
+                    alt="image"
+                    class="hero17-image2"
+                  />
+                </a>
+                <div class="hero17-container3">
+                  <a href="#Home" class="hero17-link3">
+                    <img
+                      src="public/contact%20me1-300h.png"
+                      alt="image"
+                      class="hero17-image3"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </hero17-wrapper>
+        <features24-wrapper class="features24-wrapper">
+          <!--Features24 component-->
+          <div id="Projects" class="features24-container10 thq-section-padding">
+            <span>
+              <fragment class="home-fragment12">
+                <span class="home-text12">
+                  <span>Projects</span>
+                  <br />
+                  <br />
+                </span>
+              </fragment>
+            </span>
+            <div class="features24-container11 thq-section-max-width">
+              <a
+                href="https://github.com/Joshguen/MobileCIS4030"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="features24-image-container1">
+                  <img
+                    alt="image"
+                    src="public/splitter%20image-3200h.png"
+                    class="features24-image1"
+                  />
+                </div>
+              </a>
+              <div class="features24-tabs-menu1">
+                <div class="features24-tab-horizontal10">
+                  <div class="features24-divider-container10">
+                    <div class="features24-container12"></div>
+                  </div>
+                  <div class="features24-content1">
+                    <h2 class="thq-heading-2">
+                      <fragment class="home-fragment15">
+                        <span class="home-text18">Splitter</span>
+                      </fragment>
+                    </h2>
+                    <span class="thq-body-small">
+                      <fragment class="home-fragment19">
+                        <span class="home-text22">
+                          Splitter is a Java application designed to take a
+                          picture of a receipt, and split it into items for
+                          easier bill splitting between multiple people. I
+                          worked on this with a small group of friends to solve
+                          a regular issue we encountered with splitting grocery
+                          bills. This app replaced our increasingly convoluted
+                          spreadsheets and was a fun project to work on.
+                        </span>
+                      </fragment>
+                    </span>
+                    <span class="features24-text11">
+                      <fragment class="home-fragment13">
+                        <span class="home-text16">
+                          Link to Splitter Repository
+                        </span>
+                      </fragment>
+                    </span>
+                  </div>
+                </div>
+                <div class="features24-tab-horizontal11">
+                  <div class="features24-divider-container11">
+                    <div class="features24-container13"></div>
+                  </div>
+                </div>
+                <div class="features24-tab-horizontal12">
+                  <div class="features24-divider-container12">
+                    <div class="features24-container14"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="features24-container15 thq-section-max-width">
+              <div class="features24-tabs-menu2">
+                <div class="features24-tab-horizontal13">
+                  <div class="features24-content2">
+                    <h2 class="thq-heading-2">
+                      <fragment class="home-fragment16">
+                        <span class="home-text19">
+                          University Course Parser
+                        </span>
+                      </fragment>
+                    </h2>
+                    <span class="thq-body-small">
+                      <fragment class="home-fragment20">
+                        <span class="home-text23">
+                          <span>
+                            I developed a course parsing app alongside some
+                            classmates that scraped the University of Guelph's
+                            course and presented all course dependencies and
+                            requirements in a connected graph using Electron.js.
+                            It fully supported the user to make custom views
+                            using a big data set and was aimed at optimizing
+                            course scheduling for students at the University of
+                            Guelph to graduate in as short a window as needed.
+                          </span>
+                          <br />
+                          <br />
+                          <span></span>
+                        </span>
+                      </fragment>
+                    </span>
+                  </div>
+                </div>
+                <div class="features24-tab-horizontal14">
+                  <div class="features24-divider-container13">
+                    <div class="features24-container16"></div>
+                  </div>
+                </div>
+                <div class="features24-tab-horizontal15">
+                  <div class="features24-divider-container14">
+                    <div class="features24-container17"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="features24-image-container2">
+                <img
+                  alt="image"
+                  src="public/course%20parser-400h.png"
+                  class="features24-image2"
+                />
+              </div>
+            </div>
+            <div class="features24-container18 thq-section-max-width">
+              <a
+                href="https://github.com/Joshguen/Crate"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="features24-image-container3">
+                  <img
+                    alt="image"
+                    src="public/crate%20homepage-300w.png"
+                    class="features24-image3"
+                  />
+                </div>
+              </a>
+              <div class="features24-tabs-menu3">
+                <div class="features24-tab-horizontal16">
+                  <div class="features24-divider-container15">
+                    <div class="features24-container19"></div>
+                  </div>
+                  <div class="features24-content3">
+                    <h2 class="thq-heading-2">
+                      <fragment class="home-fragment17">
+                        <span class="home-text20">Crate</span>
+                      </fragment>
+                    </h2>
+                    <span class="thq-body-small">
+                      <fragment class="home-fragment21">
+                        <span class="home-text28">
+                          <span></span>
+                          <br />
+                          <span>
+                            I'm currently working on developing an app that will
+                            help crafty people keep tabs of their materials and
+                            completed tasks in an organized manner. I've been
+                            making it with my family in mind, as they felt it
+                            would be really helpful for all the sewing and
+                            crochet crafts that they've been working on.
+                          </span>
+                        </span>
+                      </fragment>
+                    </span>
+                    <a
+                      href="https://github.com/Joshguen/Crate"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="features24-link3"
+                    >
+                      <fragment class="home-fragment14">
+                        <span class="home-text17">
+                          Link to Crate Repository
+                        </span>
+                      </fragment>
+                    </a>
+                  </div>
+                </div>
+                <div class="features24-tab-horizontal17">
+                  <div class="features24-divider-container16">
+                    <div class="features24-container20"></div>
+                  </div>
+                </div>
+                <div class="features24-tab-horizontal18">
+                  <div class="features24-divider-container17">
+                    <div class="features24-container21"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="features24-container22 thq-section-max-width">
+              <div class="features24-tabs-menu4">
+                <div class="features24-tab-horizontal19">
+                  <div class="features24-content4">
+                    <h2 class="thq-heading-2">
+                      <fragment class="home-fragment18">
+                        <span class="home-text21">Grillz</span>
+                      </fragment>
+                    </h2>
+                    <span class="thq-body-small">
+                      <fragment class="home-fragment22">
+                        <span class="home-text32">
+                          Using Web3, I made a specialty tool for a client that
+                          determined whether a user's connected wallet contained
+                          an NFT of select brand. I took on this task on both on
+                          commission and as an opportunity to look into some of
+                          the past excitement about blockchain development. I'm
+                          a curious person by nature, and think it's crucial to
+                          understand emerging technologies, lest we slip into
+                          complacency.
+                        </span>
+                      </fragment>
+                    </span>
+                  </div>
+                </div>
+                <div class="features24-tab-horizontal20">
+                  <div class="features24-divider-container18">
+                    <div class="features24-container23"></div>
+                  </div>
+                </div>
+                <div class="features24-tab-horizontal21">
+                  <div class="features24-divider-container19">
+                    <div class="features24-container24"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="features24-image-container4">
+                <img
+                  alt="image"
+                  src="public/grillz-500w.png"
+                  class="features24-image4"
+                />
+              </div>
+            </div>
+          </div>
+        </features24-wrapper>
+        <steps1-wrapper class="steps1-wrapper">
+          <!--Steps1 component-->
+          <div
+            id="Work Experience"
+            class="steps1-container1 thq-section-padding"
+          >
+            <span>
+              <fragment class="home-fragment23">
+                <span class="home-text33">Work Experience</span>
+              </fragment>
+            </span>
+            <div class="steps1-max-width thq-section-max-width">
+              <div class="steps1-container2">
+                <div class="steps1-container3 thq-card">
+                  <img
+                    src="public/kenotahealth_cover-200h.jpg"
+                    alt="image"
+                    class="steps1-image1"
+                  />
+                  <h2 class="steps1-text11 thq-heading-2">
+                    <fragment class="home-fragment24">
+                      <span class="home-text34">
+                        Kenota Health Software Test Engineer
+                      </span>
+                    </fragment>
+                  </h2>
+                  <span class="steps1-text12 thq-body-small">
+                    <fragment class="home-fragment28">
+                      <span class="home-text45">
+                        Primary Software QA and Test Case Developer
+                      </span>
+                    </fragment>
+                  </span>
+                </div>
+                <div class="steps1-container4 thq-card">
+                  <img
+                    src="public/geoware_inc__logo-200h.jpg"
+                    alt="image"
+                    class="steps1-image2"
+                  />
+                  <h2 class="steps1-text13 thq-heading-2">
+                    <fragment class="home-fragment25">
+                      <span class="home-text35">
+                        <span>Geoware</span>
+                        <br />
+                        <span>Software Developer</span>
+                      </span>
+                    </fragment>
+                  </h2>
+                  <span class="steps1-text14 thq-body-small">
+                    <fragment class="home-fragment29">
+                      <span class="home-text46">
+                        Junior Java and SQL Developer&nbsp;
+                      </span>
+                    </fragment>
+                  </span>
+                </div>
+              </div>
+              <div class="steps1-container5">
+                <div class="steps1-container6 thq-card">
+                  <img
+                    src="public/busplanner-200h.jpg"
+                    alt="image"
+                    class="steps1-image3"
+                  />
+                  <h2 class="steps1-text15 thq-heading-2">
+                    <fragment class="home-fragment26">
+                      <span class="home-text39">
+                        <span>Bus Planner</span>
+                        <br />
+                        <span>Software Developer</span>
+                        <br />
+                      </span>
+                    </fragment>
+                  </h2>
+                  <span class="steps1-text16 thq-body-small">
+                    <fragment class="home-fragment30">
+                      <span class="home-text47">
+                        Junior C++ Developer and Edge Case QA
+                      </span>
+                    </fragment>
+                  </span>
+                </div>
+                <div class="steps1-container7 thq-card">
+                  <img
+                    src="public/download-200h.jpg"
+                    alt="image"
+                    class="steps1-image4"
+                  />
+                  <h2 class="steps1-text17 thq-heading-2">
+                    <fragment class="home-fragment27">
+                      <span class="home-text44">
+                        Serenia Life Help Desk Analyst&nbsp;
+                      </span>
+                    </fragment>
+                  </h2>
+                  <span class="steps1-text18 thq-body-small">
+                    <fragment class="home-fragment31">
+                      <span class="home-text48">
+                        <span>
+                          Tier 1 Software Support and Script Automation
+                        </span>
+                        <br />
+                      </span>
+                    </fragment>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </steps1-wrapper>
+        <contact10-wrapper class="contact10-wrapper">
+          <!--Contact10 component-->
+          <div id="Contact" class="contact10-container1 thq-section-padding">
+            <div class="contact10-max-width thq-section-max-width">
+              <div class="contact10-content1 thq-flex-row">
+                <div class="contact10-content2">
+                  <h2 class="thq-heading-2">
+                    <fragment class="home-fragment33">
+                      <span class="home-text52">Contact Me</span>
+                    </fragment>
+                  </h2>
+                  <p class="thq-body-large">
+                    <fragment class="home-fragment32">
+                      <span class="home-text51">
+                        Feel free to reach out to me for any inquiries or just
+                        to say hi!
+                      </span>
+                    </fragment>
+                  </p>
+                </div>
+              </div>
+              <div class="contact10-content3 thq-flex-row">
+                <a href="mailto:Joshguen98@gmail.com?subject=">
+                  <div class="contact10-container2">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      class="contact10-icon1"
+                    >
+                      <path
+                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4l-8 5l-8-5V6l8 5l8-5z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/Joshguen"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <div class="contact10-container3">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      class="contact10-icon3"
+                    >
+                      <path
+                        d="M12.006 2a9.85 9.85 0 0 0-6.484 2.44a10.32 10.32 0 0 0-3.393 6.17a10.48 10.48 0 0 0 1.317 6.955a10.05 10.05 0 0 0 5.4 4.418c.504.095.683-.223.683-.494c0-.245-.01-1.052-.014-1.908c-2.78.62-3.366-1.21-3.366-1.21a2.7 2.7 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621c.317.044.62.163.885.346c.266.183.487.426.647.71c.135.253.318.476.538.655a2.08 2.08 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37c-2.219-.259-4.554-1.138-4.554-5.07a4.02 4.02 0 0 1 1.031-2.75a3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05c.37.858.406 1.828.101 2.713a4.02 4.02 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.47 2.47 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814c0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421a10.47 10.47 0 0 0 1.313-6.948a10.32 10.32 0 0 0-3.39-6.165A9.85 9.85 0 0 0 12.007 2Z"
+                        fill="currentColor"
+                        clip-rule="evenodd"
+                        fill-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/joshua-guenther1"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <div class="contact10-container4">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      class="contact10-icon5"
+                    >
+                      <path
+                        d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </contact10-wrapper>
+      </div>
+    </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+.contact10-container1 {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.contact10-max-width {
+  align-self: center;
+}
+.contact10-content1 {
+  width: 100%;
+  margin-bottom: var(--dl-space-space-threeunits);
+  justify-content: flex-start;
+}
+.contact10-content2 {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.contact10-content3 {
+  width: 100%;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contact10-container2 {
+  gap: var(--dl-space-space-oneandhalfunits);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+}
+.contact10-icon1 {
+  width: 215px;
+  height: 215px;
+  transition: 0.3s;
+}
+.contact10-icon1:hover {
+  opacity: 0.5;
+}
+.contact10-container3 {
+  gap: var(--dl-space-space-oneandhalfunits);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+}
+.contact10-icon3 {
+  width: 215px;
+  height: 215px;
+  transition: 0.3s;
+}
+.contact10-icon3:hover {
+  opacity: 0.5;
+}
+.contact10-container4 {
+  gap: var(--dl-space-space-oneandhalfunits);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+}
+.contact10-icon5 {
+  width: 215px;
+  height: 215px;
+  transition: 0.3s;
+}
+.contact10-icon5:hover {
+  opacity: 0.5;
+}
+.contact10-fragment1 {
+  display: contents;
+}
+.contact10-text3 {
+  display: inline-block;
+}
+.contact10-fragment2 {
+  display: contents;
+}
+.contact10-text4 {
+  display: inline-block;
+}
+@media(max-width: 991px) {
+  .contact10-content1 {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .contact10-content3 {
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media(max-width: 767px) {
+  .contact10-content1 {
+    gap: var(--dl-space-space-oneandhalfunits);
+  }
+}
