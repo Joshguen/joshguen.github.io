@@ -120,7 +120,7 @@
   display: grid;
   grid-gap: var(--dl-space-space-fiveunits);
   position: relative;
-  background: lightgray;
+  background: #D9E8F7;
   grid-template-columns: 1fr 1fr;
 }
 .features24-image-container1 {
@@ -304,7 +304,7 @@
   display: grid;
   grid-gap: var(--dl-space-space-fiveunits);
   position: relative;
-  background: lightgrey;
+  background: #D9E8F7;
   grid-template-columns: 1fr 1fr;
 }
 .features24-image-container3 {
@@ -808,6 +808,7 @@
   position: relative;
   align-items: flex-start;
   flex-direction: column;
+  background: #D9E8F7;
 }
 .contact10-max-width {
   align-self: center;
